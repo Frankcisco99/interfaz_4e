@@ -1,5 +1,10 @@
 import tkinter as tk
 from tkinter import ttk
+
+def obtenerValor():
+    entrada = entrada_texto.get()
+    print(entrada)
+
 #crear la ventana
 ventana = tk.Tk()
 ventana.title("Busqueda de error")
@@ -10,7 +15,7 @@ titulo.pack(padx=10, pady=10)
 entrada_texto = ttk.Entry(ventana)
 entrada_texto.pack(padx=10, pady=10)
 
-btn_buscar = ttk.Button(ventana, text="Buscar codigo")
+btn_buscar = ttk.Button(ventana, text="Buscar codigo", command=obtenerValor)
 btn_buscar.pack(padx=10, pady=10)
 
 descripcion = ttk.Label(ventana,text="")
