@@ -14,7 +14,7 @@ def obtenerValor():
 
 #crear la ventana
 ventana = tk.Tk()
-ventana.title("Busqueda de error")
+ventana.title("Busqueda")
 
 titulo = ttk.Label(ventana, text="Ingresa el codigo", font="Calibri 24")
 titulo.pack(padx=10, pady=10)
