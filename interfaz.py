@@ -1,9 +1,16 @@
-import tkinter as tk
+import tkinter as tk  
 from tkinter import ttk
+import json
+
+with open('errores.json', 'r') as file:
+    data = json.load(file)
 
 def obtenerValor():
     entrada = entrada_texto.get()
     print(entrada)
+    for error in data['errores']:
+        if error['error'] == entrada:
+            print("Error encontrado")
 
 #crear la ventana
 ventana = tk.Tk()
