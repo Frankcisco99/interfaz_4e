@@ -22,7 +22,7 @@ titulo.pack(padx=10, pady=10)
 entrada_texto = ttk.Entry(ventana)
 entrada_texto.pack(padx=10, pady=10)
 
-btn_buscar = ttk.Button(ventana, text="Buscar codigo", command=obtenerValor)
+btn_buscar = ttk.Button(ventana, text="Buscar", command=obtenerValor)
 btn_buscar.pack(padx=10, pady=10)
 
 descripcion = ttk.Label(ventana,text="")
